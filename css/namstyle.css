@@ -1,0 +1,681 @@
+/* custom css */
+
+html, body{font-family: 'Poppins', sans-serif; font-size: 1rem; overflow-x: hidden}
+a:hover, a:focus, a:active{outline: none}
+button:hover, button:focus, button:active{outline: none}
+svg {height: auto; width: 100%}
+
+.fnt1{font-size: .7rem}
+.bdrlw{border-left: 1px solid rgba(255,255,255,0.2)}
+.bdrlb{border-left: 1px solid rgba(0,0,0,0.2)}
+header{position: fixed; top: 0; width: 100%; height: 4rem; padding: 1.2rem; z-index: 10; background: #ffffff}
+header .innerpage{font-size: 1.2rem; position: relative; top: -0.1rem; opacity: 0.4;}
+.section{ width: 100%; padding: 0 2rem 2rem}
+.bg-primary{background: #ff5851!important;}
+.intro {padding: 4rem; position: relative; overflow: hidden;}
+.intro h1 {line-height: 4rem; font-weight: 200; font-size: 3rem}
+.intro h1 span.fnt-bld{font-weight: 500}
+.intro h1 span.fnt2{font-size: 1.5rem; font-weight: 300}
+.intro h3{font-weight: 400; bottom: 5rem; position: absolute;}
+.intro h3 span.fntl{font-weight: 200}
+.maxh{height: 89vh;}
+
+
+.bg-success{background: #eaeaea!important; padding: 4rem 0 0 4rem; height: 100%;}
+.bg-success h2{line-height: 3.5rem; font-weight: 200; font-size: 3rem}
+.bg-success h2 span{display: block; color: #ff5851; font-weight: 700}
+
+.bg-info{background: #1c1b20!important; color: #fff}
+
+.knowme{position: relative;}
+.knowme p{font-weight: 300}
+.knowme p span{font-weight: 500}
+.knowme .bg-info{position: absolute; bottom: 0; right: 0}
+
+.resume a{color: #fff}
+.resume a:hover{text-decoration: none}
+.resume svg {fill: #fff;}
+
+.asa{padding: 4rem 0 4rem 4rem; height: 100%;}
+.asa ul li p{padding-top: 0} 
+.asa h2{line-height: 3.5rem; font-weight: 200; font-size: 3rem}
+.asa h2 span{display: block; color: #ff5851; font-weight: 700}
+.asa h5{color: #ff5851; font-size: 1rem}
+.asa ul{float: left;}
+.asa ul li{width: 45%; float: left;}
+.asa ul li img{width: 20%; height: auto;}
+.asa ul li svg{width: 20%; height: auto;}
+.asa p{font-weight: 200; font-size: 1.2rem}
+.asa ul li p{font-size: 1rem;}
+.asa ul li p{font-size: 1rem;}
+.asa .innovator ul li{width: 100%}
+.asa .innovator ul li p span{color: #ff5851; font-weight: 600}
+.asa .innovator ul li p{padding-left: 40px!important}
+.asa .innovator ul li p::before {
+	content: '----';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: -1px;
+	margin: 0 0.75rem 0 0;
+    position: absolute;
+    left: 3rem;
+}
+
+.experience {padding: 4rem 4rem 4rem 4rem; height: 100%;}
+.experience h2{line-height: 3.5rem; font-weight: 200; font-size: 3rem}
+.experience h2 span{display: block; color: #ff5851; font-weight: 700}
+.experience p.years{font-size: 0.9rem; font-weight: 400}
+.experience img{width: 70%;}
+.work {position: relative; padding: 4rem 0 4rem 4rem; height: 100%;}
+.work h2{line-height: 3.5rem; font-weight: 200; font-size: 3rem}
+.work h2 span{display: block; color: #ffffff; font-weight: 700}
+.work p{font-weight: 300}
+.work p span{font-weight: 500}
+.work .bg-info{position: absolute; bottom: 0; right: 0}
+.work .bg-info h3{font-size: 1.5rem}
+.work .bg-info p{font-size: 0.9rem}
+.work a{color: #fff; border: 2px solid #fff; padding: 0.8rem ; width: 80%; background: transparent; font-weight: 500; font-size: 1rem; letter-spacing: 0.05rem }
+.work a svg{font-size: 1rem; position: relative; top: -1px; transform: scaleX(-1)}
+
+.footer {padding: 1rem 3rem 1.5rem 2rem; width: 100%}
+.footer i{font-size: 1.5rem;}
+.footer a{color: #000}
+.footer span.place{font-weight: 200}
+.footer img{width: 10%; }
+.footer svg.icon-arrow {float: left; margin: 1rem 1rem 1rem 0 ;transform: scaleX(-1)}
+.footer span a{color: #ff5851; padding-left: 0.2rem; font-size: 1.2rem}
+.icon {display: inline-block; width: 1.5em;	height: 1.5em; margin: 0 auto; fill: currentColor;}
+main {position: relative; width: 100%;}
+.content {position: relative; z-index: 1;}
+.background {perspective: 1000px;}
+.background, .background__copy {position: fixed; width: 100%; height: 100%;	top: 0;	left: 0; 
+	background-position: 50% 0%; background-size: cover; z-index: -1}
+.background__copy {opacity: 0.3;}
+
+.action {background: none; border: 0; color: #ffffff; cursor: pointer; padding: 0;}
+.action--menu {pointer-events: auto; position: fixed; top: 1.4rem; right: 2.2rem; z-index: 1000; color: #1c1b20;
+	outline: none}
+.action--menu:hover, .action--menu:focus, .action--menu:active{outline: none}
+.action--menu svg{-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+.menu--open .action--menu {pointer-events: none;}
+
+.action--close {position: absolute;	top: 1.5rem; right: 1.75rem; z-index: 1000;	opacity: 0;	padding: 0 0.5rem; transform: none!important }
+.icon--menu {width: 2rem;}
+.icon--close {width: 1rem;}
+.menu {text-align: center; width: 100%;	height: 100vh; overflow: hidden; position: fixed; top: 0; left: 0;
+	z-index: 10; display: grid;	grid-template-columns: 100%; grid-template-rows: repeat(3,33.33%);
+    pointer-events: none;}
+.menu--open {pointer-events: auto; background: #1c1b20;}
+.menu__item {width: 100%; position: relative; overflow: hidden;}
+.opac{opacity: 0;}
+.menu__item-inner {overflow: hidden; transform: translate3d(100%,0,0); height: 100%; width: 100%;
+	position: relative;	display: flex; flex-direction: column; justify-content: center;}
+.menu__item-inner a{color: #fff}
+.menu__item--1 .menu__item-inner {background: #1c1b20; color: #fff;}
+.menu__item--2 .menu__item-inner {background: #1c1b20;}
+.menu__item--2 .menu__item-inner p{color: #fff; font-weight: 400; font-size: 1.2rem; z-index: 100; margin: 0 20px}
+.menu__item--2 .menu__item-inner p span{font-weight: 600;}
+.menu__item--3 .menu__item-inner {background: #000000; color: #fff;}
+.menu__item--3 .menu__item-inner a{color: #fff}
+.menu__item--4 .menu__item-inner {background: #1c1b20;}
+.menu__item--4 .menu__item-inner svg{fill: rgba(255,255,255,0.8);}
+.menu__item--5 .menu__item-inner {background: #000000; color: #fff;}
+.menu__item--4, .menu__item--5 {display: none;}
+
+.menu__item--5 svg{fill: #fff; width: 50%}
+.menu__item.menu__item--4 svg{width: 10%}
+
+.mainmenu__item {opacity: 0;}
+.mainmenu__item, .sidemenu__item {position: relative; overflow: hidden; transition: color 0.1s;	margin: 0.25rem 0;
+	display: block;}
+.sidemenu__item-inner {display: block; transform: translate3d(0,100%,0);}
+.menu__item-map {width: 100%; height: 100%;	position: absolute;	top: 0;	left: 0; background: url(../images/2.jpg) no-repeat 50% 50%;
+	background-size: cover;	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);}
+.menu__item-inner:hover .menu__item-map {transform: scale3d(1.1,1.1,1);}
+.menu__item-link {
+	text-align: left;
+	align-self: flex-start;
+	justify-self: start;
+	font-size: 1.5rem;
+	width: 100%;
+	line-height: 1;
+	padding: 2rem ;
+	margin: 3rem 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 3rem);
+}
+.menu__item-link::after {
+	content: '\27F6';
+	display: block;
+	margin-top: auto;
+	font-size: 0.95rem;
+}
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+.workhead{position: relative; background:#1c1b20; padding: 7rem 0 0rem 4rem; height: 51vh;}
+.workhead h2{line-height: 3.5rem; font-weight: 200; font-size: 3rem; color: #ffffff}
+.workhead h2 span{display: block; color: #ff5851; font-weight: 700}
+.workhead h3{line-height: 3.5rem; font-weight: 200; font-size: 2rem}
+.workhead p{font-weight: 300; color: #ffffff}
+.workhead p span{font-weight: 500}
+
+.projects{position: relative; background: #eaeaea; margin: 0; position: relative; z-index: 1000;}
+.projects p{font-weight: 300}
+.projects p span{font-weight: 500}
+.projects img{width: 100%; height: 100%}
+.innerproject{position: relative}
+.innerproject h4{position: absolute; bottom: 0}
+
+.projectdetails{position: relative; padding: 6rem 0 4rem 4rem; height: 100%;}
+.projectdetails h2{font-size: 1.5rem; line-height: 3rem; font-weight: 200;}
+.projectdetails h2 span{display: block; color: #ffffff; font-weight: 700; font-size: 2rem}
+.projectdetails p{font-weight: 300}
+.projectdetails p span{font-weight: 500}
+.projectdetails .bg-info{position: absolute; bottom: 0; right: 0}
+.projectdetails .bg-info h3{font-size: 1.5rem}
+.projectdetails .bg-info p{font-size: 0.9rem}
+.projectdetails a{color: #fff; border: 2px solid #fff; padding: 0.8rem ; width: 80%; background: transparent; font-weight: 500; font-size: 1rem; letter-spacing: 0.05rem }
+.projectdetails a svg{font-size: 1rem; position: relative; top: -1px; transform: scaleX(-1)}
+
+.projecttools {padding: 2rem 2rem 2rem 4rem;}
+.projecttools h2{line-height: 3.5rem; font-weight: 200; font-size: 1.5rem}
+.projecttools h2 span{display: block; color: #ff5851; font-weight: 700}
+.projecttools ul li{width: 19%}
+.projecttools ul li img{width: 20%}
+.projecttools ul li p span{font-size: 0.8rem; font-weight: 300}
+.projecttools ul.langs li{width: 100%}
+.projecttools svg{width: 20%}
+
+.project-close{border: 1px solid rgba(28,27,32,0.8); padding: 0.1rem; border-radius: 50%; color: #1c1b20; width: 1.8rem; height: 1.8rem;	display: block;	text-align: center;	float: right;}
+.project-close .icon--close {width: 0.6rem;	position: relative;	top: -0.05rem;}
+
+.fisglobal{background: #4BCD3E !important}
+.olb{background: #38AFFF !important}
+.rediness{background: #8DC63F !important}
+.trigma{background: #EE4035 !important}
+.sumfactor{background: #ffcc00 !important}
+.bira{background: #ED1C24 !important}
+
+
+
+figure {margin: 0;}
+.grey-col{color: #1c1b20}
+.grid {
+	position: relative;
+	clear: both;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 33.33%;
+	height: auto;
+	background: #1c1b20;
+	text-align: left;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	opacity: 1;
+}
+
+figure.effect-zoe:hover img{opacity: 0.1}
+.grid figure figcaption {
+	padding: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.grid figure span{font-size: 0.8rem; text-transform: lowercase}
+.grid figure h2 {
+	word-spacing: -0.15rem;
+	font-weight: 300;
+	font-size: 1.5rem;
+	padding-top: 0rem;
+}
+.grid figure h2 span {
+	font-weight: 800;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+.grid figure p {
+	font-size: 68.5%;
+}
+figure.effect-apollo {
+	background: #000000;
+}
+figure.effect-apollo img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+figure.effect-apollo p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 3em;
+	padding: 0 1em;
+	max-width: 80%;
+	border-right: 4px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+figure.effect-apollo h2 {
+	text-align: left;
+}
+figure.effect-apollo:hover img {
+	opacity: 0.7;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+figure.effect-apollo:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+.scroltop a {
+	bottom: 2rem;
+	left: 0.5rem;
+	position: fixed;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	color:	rgba(0,0,0,0.8);
+	z-index: 1000;
+	font-size: 0.65rem;
+	font-weight: bold;
+	margin: 0;
+	white-space: nowrap;
+
+}
+.scroltop a:hover, .scroltop a:focus, .scroltop a:active{text-decoration: none}
+.scroltop a::before {
+	content: '<------';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: -1px;
+	margin: 0 0.75rem 0.5rem 0;
+    
+}
+
+@media screen and (min-width: 53em) {
+	body {
+		padding: 0;
+	}
+	.content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		min-height: 100vh;
+		text-align: left;
+	}
+	.menu {
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		grid-template-columns: 20% 30% 50%;
+		grid-template-rows: 60% 40%;
+		grid-template-areas: 
+            "item3 item2 item1"
+            "item4 item5 item1";
+	}
+	.menu__item {
+		height: 100%;
+	}
+	.menu__item--1 {
+		grid-area: item1;
+	}
+	.menu__item--2 {
+		grid-area: item2;
+	}
+	.menu__item--3 {
+		grid-area: item3;
+	}
+	.menu__item--4 {
+		grid-area: item4;
+	}
+	.menu__item--5 {
+		grid-area: item5;
+	}
+	.menu__item--4, 
+	.menu__item--5 {
+		display: block;
+	}
+	.menu__item-inner {
+		align-items: center;
+	}
+	.menu .label {
+		display: block;
+		color: rgba(255,255,255,0.4);
+		position: absolute;
+		z-index: 1000;
+		font-size: 0.85rem;
+		font-weight: bold;
+		margin: 0;
+		white-space: nowrap;
+	}
+	.menu .label--topleft {
+		top: 2rem;
+		left: 2rem;
+	}
+	.menu .label--vert,
+	.menu .label--vert-mirror {
+		-webkit-writing-mode: vertical-rl;
+		writing-mode: vertical-rl;
+	}
+	.menu .label--vert-mirror {
+		transform: rotate(180deg);
+	}
+	.menu .label--bottomright {
+		bottom: 2rem;
+		right: 2rem;
+	}
+	.menu .label::before {
+		content: '------------- ';
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		letter-spacing: -1px;
+		margin: 0 0.75rem 0 0;
+	}
+	.menu .label--vert::before,
+	.menu .label--vert-mirror::before {
+		margin: 0.75rem 0;
+	}
+	.mainmenu,
+	.sidemenu {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.mainmenu {
+		counter-reset: menuitem;
+	}
+	.mainmenu__item {
+		font-size: 5vw;
+		text-transform: lowercase;
+		overflow: visible;
+		margin: 0.5rem 0;
+		padding: 0 0.5rem;
+		position: relative;
+		transition: color 0.3s;
+	}
+	.mainmenu__item:hover {
+		color: var(--color-item-alt);
+	}
+	.mainmenu__item::before {
+		counter-increment: menuitem;
+		content: counters(menuitem, "", decimal-leading-zero);
+		position: absolute;
+	    font-size: 0.85rem;	
+	    top: 25%;
+	    left: -1.25rem;
+	    color: #ff5851;
+	}
+	.mainmenu__item::after {
+		content: '';
+		width: 100%;
+		top: 58%;
+		height: 6px;
+		background: var(--color-link-hover);
+		position: absolute;
+		left: 0;
+		opacity: 0;
+		transform: scale3d(0,1,1);
+		transition: transform 0.3s, opacity 0.3s;
+		transform-origin: 100% 50%;
+	}
+	.mainmenu__item:hover::after {
+		opacity: 1;
+		transform: scale3d(1,1,1);
+	}
+	.sidemenu__item {
+		text-transform: uppercase;
+		letter-spacing: 0.15rem;
+		font-size: 0.85rem;
+	}
+	.menu__item-hoverlink {
+		font-size: 1.25rem;
+		text-transform: lowercase;
+		border-bottom: 2px solid #fff;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+	.menu__item-inner:hover .menu__item-hoverlink {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	.intro {padding: 2rem; height: auto; margin-top: 4rem}
+	.intro h1{font-size: 2.5rem}
+	.intro h3{position: relative; bottom: 0; font-size: 1.4rem}
+	.section{padding: 1rem 1rem 1rem 1rem;}
+	header{padding: 1.2rem 0rem}
+	.bg-success {padding: 2rem 0 0 2rem;}
+	.bg-success h2{line-height: 2.5rem; font-size: 2rem;}
+	.knowme {position: static;}
+	.knowme .bg-info {position: static;}
+	.bg-success{height: auto; padding: 2rem 2rem 1.2rem 2rem}
+	.asa {padding: 2rem 0 2rem 2rem; height: auto; margin: 0}
+	.asa h2{line-height: 2.5rem; font-size: 2rem;}
+	.asa ul li img{width: 40%; margin-bottom: 1rem}
+	.asa ul li p{font-size: 0.8rem}
+	.bdrlw{border: none}
+	.bdrlb{border: none}
+	.experience {padding: 1rem 2rem 2rem 1rem; height: auto; margin: 0}
+	.experience h2 {line-height: 2.5rem; font-size: 2rem;}
+	.work {padding: 2rem 2rem 1.2rem 2rem; height: auto; margin: 0}
+	.work .bg-info {position: relative;}
+	.work a{width: 96%}
+	.work h2{line-height: 2.5rem; font-size: 2rem;}
+	.fnt1 {font-size: .65rem;}
+	.footer svg.icon-arrow{width: 1rem;}
+	.workhead{margin-top: 3rem; padding: 2rem 0 0 2rem}
+	.grid figure{width: 100%;}
+	.projectdetails{margin-top: 3rem}
+	.projectdetails h2 span{font-size: 2rem}
+	.projecttools {padding: 2rem 0 1rem 1rem;}
+	.projecttools ul li {width: 45%;}
+	.projecttools ul li img {width: 40%;}
+	.scroltop a{display: none}
+	.preloader img{left: 0; right: 0; margin: 0 auto}
+    .preloader.ani{top: 3.6rem; left: 1rem; width: 92%; height: 89%;}
+    .projectdetails {padding: 2rem 2rem 2rem 2rem; overflow: hidden}
+    .projectdetails .bg-info {position: relative;}
+    .projectdetails a{width: 100%}
+    
+}	
+@media screen and (min-width: 501px) and (max-width: 767px) {
+	.intro {padding: 2rem; height: auto; margin-top: 4rem}
+	.intro h1{font-size: 2.5rem}
+	.intro h3{position: relative; bottom: 0; font-size: 1.4rem}
+	.section{padding: 1rem 1rem 1rem 1rem;}
+	header{padding: 1.2rem 0rem}
+	.bg-success {padding: 2rem 0 0 2rem;}
+	.bg-success h2{line-height: 2.5rem; font-size: 2rem;}
+	.knowme {position: static;}
+	.knowme .bg-info {position: static;}
+	.bg-success{height: auto; padding: 2rem 2rem 1.2rem 2rem}
+	.asa {padding: 2rem 0 2rem 2rem; height: auto; margin: 0}
+	.asa ul li {width: 32%}
+	.asa h2{line-height: 2.5rem; font-size: 2rem;}
+	.asa ul li img{width: 40%; margin-bottom: 1rem}
+	.asa ul li p{font-size: 0.8rem}
+	.bdrlw{border: none}
+	.bdrlb{border: none}
+	.experience {padding: 1rem 2rem 2rem 1rem; height: auto; margin: 0}
+	.experience h2 {line-height: 2.5rem; font-size: 2rem;}
+	.work {padding: 2rem 2rem 1.2rem 2rem; height: auto; margin: 0}
+	.work .bg-info {position: relative;}
+	.work a{width: 70%}
+	.work h2{line-height: 2.5rem; font-size: 2rem;}
+	.fnt1 {font-size: .65rem;}
+	.footer svg.icon-arrow{width: 1rem;}
+	.scroltop a{display: inline;}
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.intro {height: auto; padding: 1.2rem 4rem;}
+	.intro h1{font-size: 2rem; line-height: 3rem}
+	.intro h3 {font-weight: 400; bottom: 0; position: relative; font-size: 1.5rem}
+	.maxh{height: 20rem; overflow: hidden;}
+	.section{padding: 1rem 2rem 1rem 2rem; overflow: hidden;}
+	.bg-success{height: auto;}
+	.asa{height: auto;}
+	.asa ul li img{width: 40%;}
+	.experience {padding: 4rem 2rem 4rem 2rem; height: auto;}
+	.work{height: auto;}
+	.work a{width: 100%;}
+	.workhead{margin-top: 3rem; height: auto; padding: 2rem 0 2rem 2rem}
+	.projectdetails{margin-top: 3rem}
+	.projectdetails h2 span{font-size: 2rem}
+	.projectdetails .bg-info h3 {font-size: 1rem;}
+	.projectdetails .bg-info p {font-size: 0.8rem;}
+	.projecttools {padding: 2rem 1rem 2rem 2rem;}
+	.projecttools ul li {width: 48%;}
+
+}	
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.menu .label::before {content: '-----';}
+	.intro{height: 86vh;} 
+	.asa{height: 86vh;}
+	.bg-success{height: 86vh;}
+	.experience {height: 86vh;}
+	.sidemenu{font-size: 0.8rem}
+	.work{height: 86vh;}
+	.work a{width: 100%;}
+	header .innerpage{font-size: 1.5rem}
+}	
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+	.intro{height: 90vh;} 
+	.asa{height: 90vh;}
+	.bg-success{height: 90vh;}
+	.experience {height: 90vh;}
+	.sidemenu{font-size: 0.8rem}
+	.work{height: 86vh;}
+	p{font-size: 1.3rem;}
+	.intro h1 {line-height: 8rem; font-size: 5.5rem;}	
+	.intro h3{font-size: 2.5rem;}
+	.intro h1 span.fnt2{font-size: 3rem;}
+	.bg-success h2 {
+		line-height: 6.5rem;
+		font-weight: 200;
+		font-size: 4.5rem;
+	}
+	.fnt1 {
+		font-size: 1rem;
+	}
+	.asa h2 {
+		line-height: 5.5rem;
+		font-weight: 200;
+		font-size: 4.5rem;
+	}
+	.experience h2{
+		line-height: 5.5rem;
+		font-weight: 200;
+		font-size: 4.5rem;
+	}
+	.work h2{
+		line-height: 5.5rem;
+		font-weight: 200;
+		font-size: 4.5rem;
+	}
+	.work .bg-info h3 {
+		font-size: 2rem;
+	}
+	.work .bg-info p {
+		font-size: 1rem;
+		margin-top: 2rem;
+	}
+	.work a {
+		padding: 0.5rem;
+		width: 80%;
+		font-size: 1.5rem;
+		margin-top: 7rem!important;
+	}
+	.work a i {font-size: 1.5rem;}
+	header .innerpage {
+		font-size: 1.5rem;
+	}
+	.workhead{height: auto; padding: 4rem 0 4rem 4rem}	
+	.preloader.ani {
+		top: 6%;
+		left: 1.4%;
+		width: 97.4%;
+		height: 91%;	
+	}
+}	
